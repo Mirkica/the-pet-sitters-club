@@ -12,5 +12,11 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  # root "posts#index"
+
+  resource :profile, only: [ :show, :edit, :update ]
+
+  resources :pets
+  resources :pet_sitting_requests
+
+  root to: "home#index"
 end
