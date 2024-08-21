@@ -1,0 +1,12 @@
+<nav style="background-image: url('<%= asset_path('banner.png') %>'); background-size: cover; background-position: center;" class="h-40">
+  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+    <ul class="space-x-8">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Sign Up", new_user_registration_path %></li>
+      <li><%= link_to "Log In", new_user_session_path %></li>
+      <li><%= link_to "Explore Pet Sitters", "#" %></li>
+      <li><%= link_to "Learn More", "#" %></li>
+      <li><%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %></li>
+    </ul>
+  </div>
+</nav>
