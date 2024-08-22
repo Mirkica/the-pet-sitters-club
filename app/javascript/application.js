@@ -1,3 +1,16 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails"
-import "controllers"
+import { Turbo } from "@hotwired/turbo-rails";
+Turbo.start();
+
+import { Application } from "@hotwired/stimulus";
+
+// Initialize Stimulus application
+const application = Application.start();
+
+// Load all Stimulus controllers from the controllers directory
+const context = require.context("controllers", true, /\.js$/);
+context.keys().forEach((key) => {
+  application.register(
+    key.split("/").pop().replace(/\..+$/, ""),
+    context(key).default
+  );
+});
