@@ -1,0 +1,57 @@
+<div class="bg-gray-100">
+  <section class="bg-custom-blue text-white py-12">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Pet Sitters Club</h1>
+      <p class="text-lg mb-6">
+        Find the perfect pet sitter or offer your own pet sitting services.
+      </p>
+      <%= link_to 'Get Started', new_user_registration_path, class:
+      'bg-yellow-500 text-black py-2 px-4 rounded-lg' %>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Our Features</h2>
+      <div class="flex flex-wrap justify-around">
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Find Pet Sitters</h3>
+            <p>
+              Browse through a list of qualified pet sitters to find the perfect
+              match for your furry friend.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Offer Pet Sitting</h3>
+            <p>
+              List your own pet sitting services and connect with pet owners
+              looking for a trusted sitter.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Secure and Reliable</h3>
+            <p>
+              Our platform ensures that all pet sitters are vetted and reliable,
+              giving you peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-custom-blue py-12 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Ready to Get Started?</h2>
+      <%= link_to 'Sign Up Now', new_user_registration_path, class:
+      'bg-yellow-500 text-black py-2 px-4 rounded-lg' %>
+    </div>
+  </section>
+</div>
