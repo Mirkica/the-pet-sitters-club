@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "pets/new"
+  get "pets/create"
+  get "pets/edit"
+  get "pets/update"
+  get "pets/destroy"
   devise_for :users
   get "home/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -13,9 +18,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
 
-  resource :profile, only: [ :show, :edit, :update ]
+  resource :profile, only: [ :show, :edit, :update ] do
+    resources :pets, only: [ :new, :create, :edit, :update, :destroy ]
+  end
 
-  resources :pets
   resources :pet_sitting_requests
 
   root to: "home#index"
