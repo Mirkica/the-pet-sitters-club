@@ -305,7 +305,7 @@ DEPENDENCIES
   capybara
   database_cleaner-active_record
   debug
-  devise
+  devise (~> 4.8)
   importmap-rails
   jbuilder
   minitest-rails
