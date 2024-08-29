@@ -5,7 +5,7 @@ gem "tailwindcss-rails"
 gem "rexml", ">= 3.3.6"
 gem "devise", "~> 4.8"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
