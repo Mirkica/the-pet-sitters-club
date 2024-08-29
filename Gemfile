@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 
 gem "tailwindcss-rails"
-
+gem "rexml", ">= 3.3.6"
 gem "devise", "~> 4.8"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
